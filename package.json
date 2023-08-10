@@ -1,0 +1,24 @@
+{
+  "name": "GameOn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/main.scss:./assets/css/main.css",
+    "prefix": "postcss --watch ./assets/css/main.css --use autoprefixer -d ./public/css/",
+    "live-server": "npx live-server --port=5500 --no-browser",
+    "start:dev": "concurrently \"npm run sass\" \"npm run prefix\" \"npm run live-server\"",
+    "start": "npx live-server --port=5500"
+  },
+  "author": "",
+  "license": "",
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.2.0",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.26",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.63.6"
+  }
+}
