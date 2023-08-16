@@ -53,8 +53,9 @@ function closeModal() {
 function validateModal() {
   modalValidated = true;
   document.querySelectorAll("input").forEach(element => {
-    if(!element.validity.valid) {
+    if(!element.checkValidity()) {
       modalValidated = false;
+      element.reportValidity();
     }
   });
   return modalValidated;
@@ -64,9 +65,4 @@ function validateModal() {
 function showConfirmation() {
   modalForm.style.display = "none";
   modalConfirmation.style.display = "flex";
-}
-
-// show where are errors in the form
-function showError() {
-
 }
