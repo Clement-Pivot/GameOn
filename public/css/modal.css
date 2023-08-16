@@ -199,6 +199,8 @@ main {
 
 .modal-confirmation-text {
   margin: auto;
+  text-align: center;
+  font-weight: 400;
 }
 
 .close-confirmation {
