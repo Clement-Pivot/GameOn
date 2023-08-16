@@ -197,6 +197,10 @@ main {
   flex-flow: column;
 }
 
+.modal-confirmation-text {
+  margin: auto;
+}
+
 label {
   font-family: var(--font-default);
   font-size: 17px;
