@@ -26,3 +26,8 @@ function launchModal() {
 modalClose.addEventListener("click", () => {
   modalbg.style.display = "none";
 })
+
+// submit modal
+modalSubmit.addEventListener("click", e => {
+  e.preventDefault();
+})
