@@ -13,6 +13,8 @@ const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 const modalClose = document.querySelector(".close");
 const modalSubmit = document.querySelector(".btn-submit");
+const modalConfirmation = document.querySelector(".modal-confirmation");
+const modalForm = document.querySelector(".modal-form");
 
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
@@ -25,6 +27,8 @@ function launchModal() {
 // close modal function
 function closeModal() {
   modalbg.style.display = "none";
+  modalForm.style.display = "block";
+  modalConfirmation.style.display = "none";
 }
 
 // close modal event listener
@@ -33,6 +37,7 @@ modalClose.addEventListener("click", closeModal)
 // submit modal
 modalSubmit.addEventListener("click", e => {
   e.preventDefault();
+  showConfirmation();
 })
 
 // validate modal function
@@ -42,5 +47,6 @@ function validateModal() {
 
 // show confirmation function
 function showConfirmation() {
-  
+  modalForm.style.display = "none";
+  modalConfirmation.style.display = "flex";
 }
