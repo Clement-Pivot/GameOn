@@ -37,6 +37,13 @@ modalSubmit.addEventListener("click", e => {
   }
 })
 
+// add input event listener
+document.querySelectorAll("input").forEach(element => {
+  element.addEventListener("blur", e => {
+    e.target.reportValidity();
+  })
+});
+
 // launch modal form
 function launchModal() {
   modalbg.style.display = "block";
