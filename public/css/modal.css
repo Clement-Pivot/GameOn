@@ -205,6 +205,7 @@ main {
 
 .close-confirmation {
   margin: 0;
+  font-size: 100%;
 }
 
 label {
@@ -341,7 +342,8 @@ input[data-error]::after {
   transform: rotate(-45deg);
 }
 .btn-submit,
-.btn-signup {
+.btn-signup,
+.close-confirmation {
   background: #fe142f;
   display: block;
   margin: 0 auto;
