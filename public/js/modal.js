@@ -20,6 +20,20 @@ const modalConfirmationClose = document.querySelector(".close-confirmation");
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
+// close modal event listener
+modalClose.addEventListener("click", closeModal);
+modalConfirmationClose.addEventListener("click", closeModal);
+
+// submit modal
+modalSubmit.addEventListener("click", e => {
+  e.preventDefault();
+  if (validateModal) {
+    showConfirmation();
+  } else {
+    showError();
+  }
+})
+
 // launch modal form
 function launchModal() {
   modalbg.style.display = "block";
@@ -32,19 +46,9 @@ function closeModal() {
   modalConfirmation.style.display = "none";
 }
 
-// close modal event listener
-modalClose.addEventListener("click", closeModal);
-modalConfirmationClose.addEventListener("click", closeModal);
-
-// submit modal
-modalSubmit.addEventListener("click", e => {
-  e.preventDefault();
-  showConfirmation();
-})
-
 // validate modal function
 function validateModal() {
-  
+  return false;
 }
 
 // show confirmation function
