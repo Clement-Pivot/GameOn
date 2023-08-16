@@ -17,6 +17,9 @@ const modalConfirmation = document.querySelector(".modal-confirmation");
 const modalForm = document.querySelector(".modal-form");
 const modalConfirmationClose = document.querySelector(".close-confirmation");
 
+// vars
+let modalValidated = false;
+
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
@@ -48,7 +51,13 @@ function closeModal() {
 
 // validate modal function
 function validateModal() {
-  return false;
+  modalValidated = true;
+  document.querySelectorAll("input").forEach(element => {
+    if(!element.validity.valid) {
+      modalValidated = false;
+    }
+  });
+  return modalValidated;
 }
 
 // show confirmation function
