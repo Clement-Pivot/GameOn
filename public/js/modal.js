@@ -21,4 +21,7 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
-
+// close modal
+modalClose.addEventListener("click", () => {
+  modalbg.style.display = "none";
+})
