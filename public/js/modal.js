@@ -31,3 +31,8 @@ modalClose.addEventListener("click", () => {
 modalSubmit.addEventListener("click", e => {
   e.preventDefault();
 })
+
+// validate modal
+function validateModal() {
+
+}
