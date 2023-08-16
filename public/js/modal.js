@@ -22,22 +22,25 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
-// close modal
-modalClose.addEventListener("click", () => {
+// close modal function
+function closeModal() {
   modalbg.style.display = "none";
-})
+}
+
+// close modal event listener
+modalClose.addEventListener("click", closeModal)
 
 // submit modal
 modalSubmit.addEventListener("click", e => {
   e.preventDefault();
 })
 
-// validate modal
+// validate modal function
 function validateModal() {
-
+  
 }
 
-// show confirmation
+// show confirmation function
 function showConfirmation() {
   
 }
