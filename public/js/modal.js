@@ -36,3 +36,8 @@ modalSubmit.addEventListener("click", e => {
 function validateModal() {
 
 }
+
+// show confirmation
+function showConfirmation() {
+  
+}
