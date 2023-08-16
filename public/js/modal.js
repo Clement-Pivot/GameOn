@@ -27,7 +27,7 @@ modalConfirmationClose.addEventListener("click", closeModal);
 // submit modal
 modalSubmit.addEventListener("click", e => {
   e.preventDefault();
-  if (validateModal) {
+  if (validateModal()) {
     showConfirmation();
   } else {
     showError();
@@ -55,4 +55,9 @@ function validateModal() {
 function showConfirmation() {
   modalForm.style.display = "none";
   modalConfirmation.style.display = "flex";
+}
+
+// show where are errors in the form
+function showError() {
+
 }
