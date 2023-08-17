@@ -33,7 +33,13 @@ modalSubmit.addEventListener("click", e => {
 // add input event listener
 document.querySelectorAll("input").forEach(element => {
   element.addEventListener("blur", e => {
-    e.target.reportValidity();
+    f = e.target.parentNode;
+    if (!e.target.checkValidity()) {
+      f.setAttribute("data-error-visible", true);
+      f.setAttribute("data-error", e.target.validationMessage);
+    } else {
+      f.setAttribute("data-error-visible", false);
+    }
   })
 });
 
