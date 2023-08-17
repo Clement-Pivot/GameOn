@@ -19,7 +19,7 @@ const modalForm = document.querySelector(".modal-form");
 // launch modal event
 modalBtn.forEach(btn => btn.addEventListener("click", launchModal));
 
-// close modal event listener
+// close modal event
 modalClose.addEventListener("click", closeModal);
 
 // submit modal
@@ -30,7 +30,7 @@ modalSubmit.addEventListener("click", e => {
   }
 })
 
-// add input event listener
+// input event
 document.querySelectorAll("input").forEach(element => {
   element.addEventListener("blur", e => {
     f = e.target.parentNode;
