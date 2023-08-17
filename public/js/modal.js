@@ -32,8 +32,6 @@ modalSubmit.addEventListener("click", e => {
   e.preventDefault();
   if (validateModal()) {
     showConfirmation();
-  } else {
-    showError();
   }
 })
 
