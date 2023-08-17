@@ -291,9 +291,15 @@ input[data-error]::after {
   transition: 0.3s;
   opacity: 0;
 }
+.formData {
+  position: relative;
+}
 .checkbox-input {
   opacity: 0;
   position: absolute;
+  z-index: -1;
+  top: 17px;
+  left: 10px;
 }
 .checkbox-input:checked + .checkbox-label .checkbox-icon::after,
 .checkbox-input:checked + .checkbox2-label .checkbox-icon::after {
