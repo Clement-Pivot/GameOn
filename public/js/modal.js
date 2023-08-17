@@ -21,7 +21,7 @@ const modalConfirmationClose = document.querySelector(".close-confirmation");
 let modalValidated = false;
 
 // launch modal event
-modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
+modalBtn.forEach(btn => btn.addEventListener("click", launchModal));
 
 // close modal event listener
 modalClose.addEventListener("click", closeModal);
