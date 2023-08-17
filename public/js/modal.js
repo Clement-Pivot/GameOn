@@ -53,9 +53,8 @@ function closeModal() {
 function validateModal() {
   let modalValidated = true;
   document.querySelectorAll("input").forEach(element => {
-    if(!element.checkValidity()) {
+    if(!element.reportValidity()) {
       modalValidated = false;
-      element.reportValidity();
     }
   });
   return modalValidated;
