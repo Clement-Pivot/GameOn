@@ -51,7 +51,17 @@ function closeModal() {
 
 // validate modal function
 function validateModal() {
-  return [...formData].every(f => f.querySelector("input").reportValidity());
+  return [...formData].every(f => {
+    const input = f.querySelector("input");
+    if (!input.checkValidity()) {
+      f.setAttribute("data-error-visible", true);
+      f.setAttribute("data-error", input.validationMessage);
+      return false;
+    } else {
+      f.setAttribute("data-error-visible", false);
+      return true;
+    }
+  });
 }
 
 // show confirmation function
