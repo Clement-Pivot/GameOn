@@ -23,7 +23,7 @@ modalBtn.forEach(btn => btn.addEventListener("click", launchModal));
 modalClose.addEventListener("click", closeModal);
 
 // submit modal
-modalSubmit.addEventListener("click", e => {
+modalSubmit.addEventListener("mousedown", e => {
   e.preventDefault();
   if (validateModal()) {
     showConfirmation();
