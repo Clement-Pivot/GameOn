@@ -15,7 +15,6 @@ const modalClose = document.querySelector(".close");
 const modalSubmit = document.querySelector(".btn-submit");
 const modalConfirmation = document.querySelector(".modal-confirmation");
 const modalForm = document.querySelector(".modal-form");
-const modalInputs = document.querySelectorAll("input");
 
 // launch modal event
 modalBtn.forEach(btn => btn.addEventListener("click", launchModal));
@@ -52,7 +51,7 @@ function closeModal() {
 
 // validate modal function
 function validateModal() {
-  return [...modalInputs].every(element => element.reportValidity());
+  return [...formData].every(f => f.querySelector("input").reportValidity());
 }
 
 // show confirmation function
