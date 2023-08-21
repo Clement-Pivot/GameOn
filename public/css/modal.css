@@ -560,6 +560,7 @@ footer {
 @media screen and (max-width: 540px) {
   .hero-headline {
     font-size: 40px;
+    font-weight: 600;
   }
   .hero-text {
     font-size: 14px;
