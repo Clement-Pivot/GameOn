@@ -11,7 +11,7 @@
   "author": "",
   "license": "",
   "browserslist": "last 4 versions",
-  "dependencies": {
+  "devDependencies": {
     "live-server": "^1.2.2"
   }
 }
