@@ -73,6 +73,7 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
+    margin-top: -15px;
   }
 }
 
@@ -558,6 +559,13 @@ footer {
 }
 
 @media screen and (max-width: 540px) {
+  .topnav {
+    overflow: visible;
+    margin: 0;
+  }
+  .header-logo img{
+    width: 140px;
+  }
   .hero-content {
     padding: 0;
   }
