@@ -561,6 +561,9 @@ footer {
   .hero-headline {
     font-size: 40px;
   }
+  .hero-text {
+    font-size: 14px;
+  }
 }
 
 @keyframes modalopen {
