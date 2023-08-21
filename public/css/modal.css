@@ -606,6 +606,9 @@ footer {
     margin-top: 20px;
     font-size: 14px;
   }
+  .content {
+    max-width: 540px;
+  }
   .copyrights {
     margin: 29px auto 0;
   }
