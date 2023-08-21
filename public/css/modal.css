@@ -68,6 +68,10 @@ img {
   display: none;
 }
 
+.fa-bars:not(:hover) {
+  color: red;
+}
+
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -109,9 +113,6 @@ main {
   .topnav a.icon {
     float: right;
     display: block;
-  }
-  .fa-bars:not(:hover) {
-    color: red;
   }
   body {
     padding: 30px;
