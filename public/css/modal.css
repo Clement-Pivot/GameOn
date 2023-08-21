@@ -101,6 +101,9 @@ img {
   .fa-bars:not(:hover) {
     color: red;
   }
+  body {
+    padding: 30px;
+  }
 } 
 
 main {
