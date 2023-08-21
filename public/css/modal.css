@@ -557,6 +557,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .hero-headline {
+    font-size: 40px;
+  }
+}
+
 @keyframes modalopen {
   from {
     opacity: 0;
