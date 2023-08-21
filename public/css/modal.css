@@ -97,7 +97,9 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
+  }
+  .fa-bars:not(:hover) {
+    color: red;
   }
 } 
 
