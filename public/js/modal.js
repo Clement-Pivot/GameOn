@@ -32,15 +32,9 @@ modalSubmit.addEventListener("mousedown", e => {
 
 // input event
 document.querySelectorAll("input").forEach(element => {
-  element.addEventListener("blur", e => {
-    const f = e.target.parentNode;
-    if (!e.target.checkValidity()) {
-      f.setAttribute("data-error-visible", true);
-      f.setAttribute("data-error", e.target.validationMessage);
-    } else {
-      f.setAttribute("data-error-visible", false);
-    }
-  })
+  element.addEventListener(
+    (element.type === "checkbox" || element.type === "radio") ? "change" : "blur",
+    toggleData);
 });
 
 // launch modal form
@@ -53,6 +47,17 @@ function closeModal() {
   modalbg.style.display = "none";
   modalForm.style.display = "block";
   modalConfirmation.style.display = "none";
+}
+
+// show/hide error message function
+function toggleData(element) {
+  const form = element.target.parentNode;
+  if (!element.target.checkValidity()) {
+    form.setAttribute("data-error-visible", true);
+    form.setAttribute("data-error", element.target.validationMessage);
+  } else {
+    form.setAttribute("data-error-visible", false);
+  }
 }
 
 // validate modal function
