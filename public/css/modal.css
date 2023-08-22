@@ -237,6 +237,7 @@ input[data-error]::after {
 .checkbox2-label {
   position: relative;
   margin-left: 36px;
+  margin-bottom: 0;
   font-size: 12px;
   font-weight: normal;
 }
@@ -577,11 +578,11 @@ footer {
 
 @media screen and (max-width: 540px) {
   body {
-    padding: 30px;
+    padding: 0;
   }
   main {
     margin: 0;
-    padding: 0;
+    padding: 30px;
   }
   .topnav a {display: none;}
   .topnav a.icon {
@@ -589,8 +590,12 @@ footer {
     display: block;
   }
   .topnav {
+    background-color: white;
+    position: relative;
+    z-index: 2;
     overflow: visible;
     margin: 0;
+    padding: 27px 30px 15px;
   }
   .header-logo img{
     width: 140px;
@@ -605,6 +610,11 @@ footer {
   .hero-text {
     margin-top: 20px;
     font-size: 14px;
+  }
+  .content {
+    margin-top: 80px;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
   }
   .copyrights {
     margin: 29px auto 0;
