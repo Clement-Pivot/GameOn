@@ -39,12 +39,25 @@ document.querySelectorAll("input").forEach(element => {
 
 // launch modal form
 function launchModal() {
-  modalbg.style.display = "block";
+  modalbg.style.display = "block"
+  modalbg.animate([
+    {
+      opacity: 0,
+      transform: "translateY(-150px)",
+      display: "block",
+    },{
+    opacity: 1,
+    transform: "translateY(0)",
+  }], {duration: 800, fill: "both" });
 }
 
 // close modal function
 function closeModal() {
-  modalbg.style.display = "none";
+  modalbg.animate([{
+    opacity: 0,
+    transform: "translateY(-150px)",
+    display: "none",
+  }], {duration: 800, fill: "both" });
   modalForm.style.display = "block";
   modalConfirmation.style.display = "none";
 }

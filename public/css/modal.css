@@ -145,8 +145,8 @@ main {
   margin: 5% auto;
   width: 100%;
   max-width: 540px;
-  animation-name: modalopen;
-  animation-duration: var(--modal-duration);
+  /* animation-name: modalopen; */
+  /* animation-duration: var(--modal-duration); */
   background: #232323;
   border-radius: 10px;
   overflow: hidden;
