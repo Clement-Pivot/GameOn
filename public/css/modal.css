@@ -636,8 +636,11 @@ footer {
   .checkbox-newsletter {
     top: -6px;
   }
-  .copyrights {
+  footer {
     margin: 29px auto 0;
+  }
+  .copyrights {
+    margin-top: 29px;
   }
 }
 
