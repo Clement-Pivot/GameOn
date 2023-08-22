@@ -619,6 +619,9 @@ footer {
   .radioData {
     line-height: 20px;
   }
+  .checkbox-newsletter {
+    top: -6px;
+  }
   .copyrights {
     margin: 29px auto 0;
   }
