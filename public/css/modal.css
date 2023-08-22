@@ -616,6 +616,9 @@ footer {
     margin-bottom: 0;
     border-radius: 10px 10px 0 0;
   }
+  .radioData {
+    line-height: 20px;
+  }
   .copyrights {
     margin: 29px auto 0;
   }
