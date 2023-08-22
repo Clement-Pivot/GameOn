@@ -28,7 +28,7 @@ modalSubmit.addEventListener("mousedown", e => {
   if (validateModal()) {
     showConfirmation();
   }
-})
+});
 
 // input event
 document.querySelectorAll("input").forEach(element => {
