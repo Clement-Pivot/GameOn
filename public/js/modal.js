@@ -46,8 +46,9 @@ function launchModal() {
       transform: "translateY(-150px)",
       display: "block",
     },{
-    opacity: 1,
-    transform: "translateY(0)",
+      opacity: 1,
+      transform: "translateY(0)",
+      display: "block",
   }], {duration: 800, fill: "both" });
 }
 
