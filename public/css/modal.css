@@ -561,7 +561,7 @@ footer {
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
+    margin-top: 0;
   }
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
@@ -573,6 +573,9 @@ footer {
     float: none;
     display: block;
     text-align: left;
+  }
+  .main-navbar a:first-of-type {
+    margin-top: 55px;
   }
 }
 
@@ -602,6 +605,7 @@ footer {
   .topnav a.icon {
     float: right;
     display: block;
+    margin-top: -15px;
   }
   .main-navbar {
     position: relative;
