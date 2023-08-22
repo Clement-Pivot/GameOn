@@ -592,18 +592,24 @@ footer {
     z-index: 2;
     overflow: visible;
     margin: 0;
-    padding: 27px 30px 15px;
+    padding: 30px 30px 15px;
+    width: 100%;
+  }
+  .header-logo img{
+    width: 140px;
   }
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
-  .header-logo {
-    margin-right: 250px;
+  .main-navbar {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: -80px;
   }
-  .header-logo img{
-    width: 140px;
+  .main-navbar a:first-of-type {
+    margin-top: 35px;
   }
   .hero-content {
     padding: 0;
@@ -629,9 +635,6 @@ footer {
   }
   .checkbox-newsletter {
     top: -6px;
-  }
-  footer {
-    margin: 29px 0 26px;
   }
   .copyrights {
     margin: 29px auto 0;
