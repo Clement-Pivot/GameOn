@@ -249,7 +249,7 @@ input[data-error]::after {
   display: block;
   width: 20px;
   height: 20px;
-  border: 2px solid #279e7a;
+  border: 2px solid #c4c4c4;
   border-radius: 50%;
   text-indent: 29px;
   white-space: nowrap;
@@ -291,6 +291,10 @@ input[data-error]::after {
 .checkbox-input:checked + .checkbox-label .checkbox-icon::after,
 .checkbox-input:checked + .checkbox2-label .checkbox-icon::after {
   opacity: 1;
+}
+
+.checkbox-input:checked + .checkbox-label .checkbox-icon {
+  border: 2px solid #279e7a;
 }
 
 .checkbox-input:checked + .checkbox2-label .checkbox-icon {
@@ -641,9 +645,11 @@ footer {
     font-size: 14px;
   }
   .content {
-    margin-top: 80px;
-    margin-bottom: 0;
+    position: absolute;
+    margin: 0;
     border-radius: 10px 10px 0 0;
+    top: 80px;
+    bottom: 0;
   }
   .modal-body {
     margin-bottom: 0;
