@@ -42,6 +42,8 @@ img {
 
 .main-navbar {
     float: right;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .topnav a {
@@ -312,6 +314,14 @@ input[data-error]::after {
   transform: rotate(-55deg);
   left: 21%;
   top: 19%;
+}
+
+.radioData {
+  line-height: 20px;
+}
+
+.checkbox-newsletter {
+  top: -6px;
 }
 
 .close {
@@ -633,12 +643,6 @@ footer {
   }
   .modal-body {
     margin-bottom: 0;
-  }
-  .radioData {
-    line-height: 20px;
-  }
-  .checkbox-newsletter {
-    top: -6px;
   }
   footer {
     margin: 29px auto 0;
