@@ -617,6 +617,9 @@ footer {
     display: block;
     margin-top: -15px;
   }
+  .topnav.responsive {
+    max-height: 80px;
+  }
   .main-navbar {
     position: relative;
     margin-top: 5px;
