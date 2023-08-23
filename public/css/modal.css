@@ -15,7 +15,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  /* background-image: url("../img/bg_img.jpg"); */
   font-family: var(--font-default);
   font-size: 18px;
   max-width: 1300px;
@@ -144,11 +143,9 @@ main {
 }
 
 .content {
-  margin: 5% auto;
+  margin: 5vh auto;
   width: 100%;
   max-width: 540px;
-  /* animation-name: modalopen; */
-  /* animation-duration: var(--modal-duration); */
   background: #232323;
   border-radius: 10px;
   overflow: hidden;
@@ -208,6 +205,13 @@ input {
   height: 48px;
 }
 
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 80vh;
+}
+
 .formData[data-error]::after {
   content: attr(data-error);
   font-size: 10px;
@@ -242,6 +246,7 @@ input[data-error]::after {
   margin-bottom: 0;
   font-size: 12px;
   font-weight: normal;
+  margin-top: 10px;
 }
 
 .checkbox-label .checkbox-icon,
