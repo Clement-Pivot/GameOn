@@ -326,7 +326,7 @@ input[data-error]::after {
 }
 
 .radioData {
-  line-height: 20px;
+  line-height: 16px;
 }
 
 .checkbox-newsletter {
