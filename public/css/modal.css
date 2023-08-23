@@ -619,6 +619,7 @@ footer {
   }
   .topnav.responsive {
     max-height: 80px;
+    position: fixed;
   }
   .main-navbar {
     position: relative;
