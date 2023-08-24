@@ -35,6 +35,7 @@ document.querySelectorAll("input").forEach(element => {
   element.addEventListener(
     (element.type === "checkbox" || element.type === "radio") ? "change" : "blur",
     event => toggleData(element, event.target.parentNode, element.checkValidity()));
+  element.addEventListener("invalid", event => event.preventDefault());
 });
 
 // launch modal form
