@@ -65,6 +65,7 @@ function closeModal() {
 
 // validate modal function
 function validateModal() {
+  // create an Array to get every() method 
   return [...formData].every(field => toggleData(field.querySelector("input"), field));
 }
 
