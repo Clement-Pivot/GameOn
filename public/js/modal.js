@@ -34,7 +34,7 @@ modalSubmit.addEventListener("mousedown", e => {
 document.querySelectorAll("input").forEach(element => {
   element.addEventListener(
     (element.type === "checkbox" || element.type === "radio") ? "change" : "blur",
-    event => toggleData(element, event.target.parentNode));
+    event => toggleData(element, event.target.parentNode, element.checkValidity()));
 });
 
 // launch modal form
@@ -63,15 +63,19 @@ function closeModal() {
   modalConfirmation.style.display = "none";
 }
 
-// validate modal function
+// validate modal function, return Boolean
 function validateModal() {
-  // create an Array to get every() method 
-  return [...formData].every(field => toggleData(field.querySelector("input"), field));
+  // create an Array from NodeList to get every() method 
+  return [...formData].every(field => {
+    const input = field.querySelector("input");
+    toggleData(input, field, input.checkValidity());
+    return input.checkValidity();
+  });
 }
 
 // show/hide error message function
-function toggleData(element, field) {
-  if (!element.checkValidity()) {
+function toggleData(element, field, validity) {
+  if (!validity) {
     field.setAttribute("data-error-visible", true);
     field.setAttribute("data-error", element.validationMessage);
   } else {
