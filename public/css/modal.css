@@ -153,6 +153,7 @@ main {
   color: #fff;
   padding-top: 10px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+  min-height: 90vh;
 }
 
 .modal-body {
