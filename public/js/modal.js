@@ -34,7 +34,7 @@ modalSubmit.addEventListener("mousedown", e => {
 document.querySelectorAll("input").forEach(element => {
   element.addEventListener(
     (element.type === "checkbox" || element.type === "radio") ? "change" : "blur",
-    toggleData);
+    event => toggleData(element, event.target.parentNode));
 });
 
 // launch modal form
@@ -63,30 +63,19 @@ function closeModal() {
   modalConfirmation.style.display = "none";
 }
 
-// show/hide error message function
-function toggleData(element) {
-  const form = element.target.parentNode;
-  if (!element.target.checkValidity()) {
-    form.setAttribute("data-error-visible", true);
-    form.setAttribute("data-error", element.target.validationMessage);
-  } else {
-    form.setAttribute("data-error-visible", false);
-  }
-}
-
 // validate modal function
 function validateModal() {
-  return [...formData].every(f => {
-    const input = f.querySelector("input");
-    if (!input.checkValidity()) {
-      f.setAttribute("data-error-visible", true);
-      f.setAttribute("data-error", input.validationMessage);
-      return false;
-    } else {
-      f.setAttribute("data-error-visible", false);
-      return true;
-    }
-  });
+  return [...formData].every(field => toggleData(field.querySelector("input"), field));
+}
+
+// show/hide error message function
+function toggleData(element, field) {
+  if (!element.checkValidity()) {
+    field.setAttribute("data-error-visible", true);
+    field.setAttribute("data-error", element.validationMessage);
+  } else {
+    field.setAttribute("data-error-visible", false);
+  }
 }
 
 // show confirmation function
