@@ -620,6 +620,8 @@ footer {
   }
   .header-logo img{
     width: 140px;
+    position: relative;
+    z-index: 3;
   }
   .topnav a {display: none;}
   .topnav a.icon {
@@ -633,8 +635,7 @@ footer {
   }
   .main-navbar {
     position: relative;
-    margin-top: 5px;
-    margin-bottom: -80px;
+    margin: 5px 0 -80px -120px;
   }
   .main-navbar a:first-of-type {
     margin-top: 35px;
