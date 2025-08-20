@@ -5,7 +5,7 @@
 Code du projet 4 GameOn de la formation React d'OpenClassroom en HTML, CSS et Javascript uniquement.
 
 # Website
-[GameOn]([https://malfeitor.github.io/GameOn/](https://clement-pivot.github.io/GameOn/))
+[GameOn](https://clement-pivot.github.io/GameOn/)
 
 ### Pré-requis
 
